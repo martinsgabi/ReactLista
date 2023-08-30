@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import "./global.css"
+
 function App() {
 
   const [ listaTarefas, setListaTarefas ] = useState( [] );
@@ -28,21 +30,22 @@ function App() {
 
   return (
     <> 
-      <header>
-        <h1>Compras do mês</h1>
+  
+      <header className="titulo">
+        <h2>🛒 COMPRAS DO MÊS</h2>
       </header>
       <div>
         <ul>
         {listaTarefas.map( ( item, index ) => (
-          <li key={index}>{item.texto}<button onClick={ () => statusTarefa(item.id, item.status) }>{item.status ? 'Concluida' : 'Não concluida' }</button> <button onClick={ () => excluirTarefa(item.id) }>X</button></li>
+          <li className="margem" key={index}><button className="status" onClick={ () => statusTarefa(item.id, item.status) }>{item.status ? '🔴' : '🟢' }</button> <div className="texto">{item.texto}</div>   <button className="excluir" onClick={ () => excluirTarefa(item.id) }>❌</button></li>
         ))}
         </ul>
       </div>
-      <div>
-        <button onClick={addTarefa} >+</button>
+      <div className="display">
+        <button onClick={addTarefa} className="botaoAdd">+</button>
         <input type="text" nome= "tarefa" placeholder="Digite sua lista" value={tarefa.texto} onChange={ (e) => setTarefa( {id: Math.random(), texto: e.target.value, status: false })} />
       </div>
-      
+ 
     </>
   );
 }

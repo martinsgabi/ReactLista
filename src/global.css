@@ -1,0 +1,81 @@
+body,header,div,ul,li{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #FEC5C5;
+    align-items: center;
+    text-align: center;
+}
+header{
+    margin: 0 auto;
+    background-color: #A60E0E;
+    color: white;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input{
+    background-color: #A60E0E;
+    color: white;
+    border: none;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0.5%;
+    margin-top: 5%;
+}
+.botaoAdd{
+    background-color: #A60E0E;
+    color: white;
+    border: none;
+    width: 10%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+li{
+    background-color: #FFE1E1;
+    border: none;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+}
+button{
+    background-color: #FFE1E1;
+    border: none;
+    font-size: 150%;
+    border-radius: 5px;
+    
+}
+.margem{
+    margin-top: 1% ;
+    font-size: 110%;
+    
+}
+.excluir{
+    width: 25%;
+
+}
+.status{
+    width: 25%;
+  
+}
+.texto{
+    width: 50%;
+   
+}
+.display{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    
+}
